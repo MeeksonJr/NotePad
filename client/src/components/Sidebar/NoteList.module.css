@@ -1,0 +1,18 @@
+.noteList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.noteItem {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f0f0f5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.noteItem:hover {
+  background-color: #d1d1d6;
+}

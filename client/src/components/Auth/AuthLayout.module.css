@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1faee; /* Background color for the whole page */
+  }
+  
+  .box {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .redSide {
+    flex: 1;
+    background-color: #e63946; /* Red color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .appleSide {
+    flex: 1;
+    background-color: #f1faee; /* Modern Apple color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 2;
+    transition: opacity 0.5s ease;
+  }
+  
+  .toggleButton {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .active .redSide {
+    transform: translateX(-100%);
+  }
+  
+  .active .appleSide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
